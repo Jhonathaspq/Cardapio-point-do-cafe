@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point do Café-In Tennis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Point do Café</h1>
+</header>
+
+<nav class="tabs">
+    <button class="tab-btn active" onclick="openTab(event, 'geladas')">Geladas</button>
+    <button class="tab-btn" onclick="openTab(event, 'quentes')">Quentes</button>
+    <button class="tab-btn" onclick="openTab(event, 'salgados')">Salgados</button>
+    <button class="tab-btn" onclick="openTab(event, 'bomboniere')">Bomboniere</button>
+</nav>
+
+<section id="geladas" class="tab-content active">
+    <h2>Bebidas Geladas</h2>
+
+    <div class="item">
+        <span>Refrigerante Lata</span>
+        <span class="price">R$ 5,50</span>
+    </div>
+
+    <div class="item">
+        <span>Coca-cola zero 600ml</span>
+        <span class="price">R$ 8,00</span>
+    </div>
+
+    <div class="item">
+        <span>Suco de polpa (Acerola, Maracujá e Abacaxi com hortelã)</span>
+        <span class="price">R$ 6,00</span>
+    </div>
+
+    <!-- <div class="item">
+        <span>Suco Natural</span>
+        <span class="price">R$ 8,00</span>
+    </div> -->
+
+    <div class="item">
+        <span>Gatorade</span>
+        <span class="price">R$ 8,50</span>
+    </div>
+
+    <div class="item">
+        <span>Power ADE</span>
+        <span class="price">R$ 7,50</span>
+    </div>
+
+    <div class="item">
+        <span>Água mineral sem gás</span>
+        <span class="price">R$ 3,00</span>
+    </div>
+
+    <div class="item">
+        <span>Água mineral com gás</span>
+        <span class="price">R$ 4,00</span>
+    </div>
+
+    <div class="item">
+        <span>RedBull</span>
+        <span class="price">R$ 13,50</span>
+    </div>
+
+    <div class="item">
+        <span>Monster</span>
+        <span class="price">R$ 12,00</span>
+    </div>
+
+    <div class="item">
+        <span>Extra Power</span>
+        <span class="price">R$ 7,00</span>
+    </div>
+
+    <div class="item">
+        <span>Toddynho</span>
+        <span class="price">R$ 4,00</span>
+    </div>
+
+    <div class="item">
+        <span>Cerveja Long Neck</span>
+        <span class="price">R$ 10,00</span>
+    </div>
+
+</section>
+
+<section id="quentes" class="tab-content">
+    <h2>Bebidas Quentes</h2>
+
+    <!-- <div class="item">
+        <span>Café Expresso</span>
+        <span class="price">R$ 4,00</span>
+    </div> -->
+
+    <div class="item">
+        <span>Cappuccino</span>
+        <span class="price">R$ 9,00</span>
+    </div>
+
+    <div class="item">
+        <span>Adcional de leite</span>
+        <span class="price">R$ 1,50</span>
+    </div>
+</section>
+
+<section id="salgados" class="tab-content">
+    <h2>Salgados</h2>
+
+    <div class="item">
+        <span>Empada de frango</span>
+        <span class="price">R$ 6,50</span>
+    </div>
+
+    <div class="item">
+        <span>Torta de frango</span>
+        <span class="price">R$ 6,50</span>
+    </div>
+
+    <div class="item">
+        <span>Enroladinho de queijo</span>
+        <span class="price">R$ 7,00</span>
+    </div>
+
+    <div class="item">
+        <span>Esfiha de carne</span>
+        <span class="price">R$ 7,00</span>
+    </div>
+
+    <div class="item">
+        <span>Biscoito de Queijo</span>
+        <span class="price">R$ 1,50</span>
+    </div>
+
+    <div class="item">
+        <span>Cachorro quente triplo</span>
+        <span class="price">R$ 6,50</span>
+    </div>
+
+    <div class="item">
+        <span>Misto quente simples</span>
+        <span class="price">R$ 5,50</span>
+    </div>
+
+    <div class="item">
+        <span>Misto quente completo</span>
+        <span class="price">R$ 7,00</span>
+    </div>
+
+    <div class="item">
+        <span>Tapioca</span>
+        <span class="price">R$ 5,00</span>
+    </div>
+
+    <!-- <div class="item">
+        <span>Cuscus</span>
+        <span class="price">R$ 1,50</span>
+    </div> -->
+
+</section>
+
+<section id="bomboniere" class="tab-content">
+    <h2>Bomboniere</h2>
+
+    <div class="item">
+        <span>Snickers</span>
+        <span class="price">R$ 5,00</span>
+    </div>
+
+    <div class="item">
+        <span>Chiclete mentos</span>
+        <span class="price">R$ 3,00</span>
+    </div>
+
+    <div class="item">
+        <span>Salgadinho Elmas Chips</span>
+        <span class="price">R$ 7,00</span>
+    </div>
+
+    <div class="item">
+        <span>Salgadinho Doritos</span>
+        <span class="price">R$ 8,00</span>
+    </div>
+
+    <div class="item">
+        <span>Amendoim</span>
+        <span class="price">R$ 1,50</span>
+    </div>
+</section>
+<footer>&copy;JhonathasQueiroz</footer>
+
+<script>
+function openTab(evt, tabName) {
+    document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+    document.getElementById(tabName).classList.add("active");
+
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    evt.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>
